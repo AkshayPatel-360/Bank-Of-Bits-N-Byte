@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankOfBitsNByteAkshay", "BankOfBitsNByteAkshay\BankOfBitsNByteAkshay.csproj", "{7BCDBFA8-344F-420F-87B3-6B049D9D0BEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BCDBFA8-344F-420F-87B3-6B049D9D0BEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BCDBFA8-344F-420F-87B3-6B049D9D0BEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BCDBFA8-344F-420F-87B3-6B049D9D0BEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BCDBFA8-344F-420F-87B3-6B049D9D0BEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {986E8FF4-449F-4B3F-95DC-B7CDD177AB61}
+	EndGlobalSection
+EndGlobal

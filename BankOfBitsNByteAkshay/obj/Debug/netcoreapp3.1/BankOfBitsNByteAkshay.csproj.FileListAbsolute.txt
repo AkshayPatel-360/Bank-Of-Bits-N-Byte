@@ -1,0 +1,13 @@
+C:\Users\Administrator\Desktop\unity tools\BankOfBitsNByteAkshay\BankOfBitsNByteAkshay\bin\Debug\netcoreapp3.1\BankOfBitsNByteAkshay.exe
+C:\Users\Administrator\Desktop\unity tools\BankOfBitsNByteAkshay\BankOfBitsNByteAkshay\bin\Debug\netcoreapp3.1\BankOfBitsNByteAkshay.deps.json
+C:\Users\Administrator\Desktop\unity tools\BankOfBitsNByteAkshay\BankOfBitsNByteAkshay\bin\Debug\netcoreapp3.1\BankOfBitsNByteAkshay.runtimeconfig.json
+C:\Users\Administrator\Desktop\unity tools\BankOfBitsNByteAkshay\BankOfBitsNByteAkshay\bin\Debug\netcoreapp3.1\BankOfBitsNByteAkshay.runtimeconfig.dev.json
+C:\Users\Administrator\Desktop\unity tools\BankOfBitsNByteAkshay\BankOfBitsNByteAkshay\bin\Debug\netcoreapp3.1\BankOfBitsNByteAkshay.dll
+C:\Users\Administrator\Desktop\unity tools\BankOfBitsNByteAkshay\BankOfBitsNByteAkshay\bin\Debug\netcoreapp3.1\BankOfBitsNByteAkshay.pdb
+C:\Users\Administrator\Desktop\unity tools\BankOfBitsNByteAkshay\BankOfBitsNByteAkshay\obj\Debug\netcoreapp3.1\BankOfBitsNByteAkshay.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\unity tools\BankOfBitsNByteAkshay\BankOfBitsNByteAkshay\obj\Debug\netcoreapp3.1\BankOfBitsNByteAkshay.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\unity tools\BankOfBitsNByteAkshay\BankOfBitsNByteAkshay\obj\Debug\netcoreapp3.1\BankOfBitsNByteAkshay.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\unity tools\BankOfBitsNByteAkshay\BankOfBitsNByteAkshay\obj\Debug\netcoreapp3.1\BankOfBitsNByteAkshay.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\unity tools\BankOfBitsNByteAkshay\BankOfBitsNByteAkshay\obj\Debug\netcoreapp3.1\BankOfBitsNByteAkshay.dll
+C:\Users\Administrator\Desktop\unity tools\BankOfBitsNByteAkshay\BankOfBitsNByteAkshay\obj\Debug\netcoreapp3.1\BankOfBitsNByteAkshay.pdb
+C:\Users\Administrator\Desktop\unity tools\BankOfBitsNByteAkshay\BankOfBitsNByteAkshay\obj\Debug\netcoreapp3.1\BankOfBitsNByteAkshay.genruntimeconfig.cache
