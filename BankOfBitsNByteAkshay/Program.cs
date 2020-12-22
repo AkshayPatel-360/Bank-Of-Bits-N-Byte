@@ -11,9 +11,10 @@ namespace BankOfBitsNByteAkshay
         static BankOfBitsNBytes bbb = new BankOfBitsNBytes();
         static int amountOfMoney = 0;
         static int MaxAcceptableCharLength { get { return BankOfBitsNBytes.acceptablePasswordChars.Length; } }
-       // public delegate void MyDelegate(string msg);
+        public delegate void MyDelegate(string msg);
 
-        //MyDelegate del ;
+        public delegate void delg();
+        MyDelegate del ;
 
 
 
@@ -22,41 +23,37 @@ namespace BankOfBitsNByteAkshay
         static void Main(string[] args)
         {
 
-            ThreadStart ts =  new ThreadStart(MultiThredBegin); ;
-            Thread t = new Thread(ts);
-            t.Start();
+            MultiThredBegin();
 
-            int[] intArray = new int[bbb.passwordLength];
-            while (amountOfMoney < 5000)
-
-            {
-                //char[] passGussCharArray = new char[MaxAcceptableCharLength];
-                char[] passGussCharArray = ConvertIntToCharArray(intArray, BankOfBitsNBytes.acceptablePasswordChars);
-                DebugOutputCharArray(passGussCharArray);
-
-                amountOfMoney += bbb.WithdrawMoney(passGussCharArray);
-                intArray[intArray.Length - 1]++;
-
-
-                if (intArray[intArray.Length - 1] >= MaxAcceptableCharLength)
-                {
-                    IncrementIntArray(ref intArray, MaxAcceptableCharLength);
-
-                }
-
-            }
-
-            Console.WriteLine("We robbed the Bank We rich now. Press any key to continue ");
-            Console.Read();
+            Console.ReadLine();
 
         }
 
-        public static void MultiThredBegin()
+
+
+
+        public static void MultiThredBegin( )
         {
+
+            for (int i = 0; i <bbb.passwordLength ; i++)
+            {
+                
+                int[] intArrayForThread = new int[bbb.passwordLength];
+                ThreadStart ts = new ThreadStart( PassGeneratorForThread(i,intArrayForThread)) ;
+                Thread t = new Thread(ts);
+                t.Start();
+
+
+
+            }
             
         }
 
-        public static void IncrementIntArray(ref int[] toIncrese, int maxAcceptableChar)
+
+
+
+
+       /* public static void IncrementIntArray(ref int[] toIncrese, int maxAcceptableChar)
         {
             toIncrese[toIncrese.Length - 1]++;
 
@@ -69,6 +66,9 @@ namespace BankOfBitsNByteAkshay
                     if (i != 0)
                     {
                         toIncrese[i - 1]++;
+
+
+
                     }
                 }
 
@@ -80,13 +80,39 @@ namespace BankOfBitsNByteAkshay
 
             }
 
+        }*/
+
+
+        public static void PassGeneratorForThread(int indexOfArray, int[] toIncrese)
+        {
+            char[] passArray = ConvertIntToCharArrayOne(toIncrese);
+            passArray[indexOfArray] = BankOfBitsNBytes.acceptablePasswordChars[toIncrese[indexOfArray]];
+
+
+
+            Console.WriteLine("Thread : " + indexOfArray + " = " + new string(passArray));
+
+            amountOfMoney += bbb.WithdrawMoney(passArray);
+
+
+            Console.WriteLine("My Current Bankbalance :" + amountOfMoney);
+
+            toIncrese[indexOfArray]++;
+
+            if (toIncrese[indexOfArray] >= BankOfBitsNBytes.acceptablePasswordChars.Length)
+            {
+                toIncrese[indexOfArray] = 0;
+
+            }
+
+
         }
 
 
 
 
 
-        public static char[] ConvertIntToCharArray(int[] toconvert,char[] intConversionArray)
+       /* public static char[] ConvertIntToCharArray(int[] toconvert,char[] intConversionArray)
         {
 
             char[] toReturn = new char[toconvert.Length];
@@ -98,7 +124,23 @@ namespace BankOfBitsNByteAkshay
 
             }
             return toReturn;
+        }*/
+
+        public static char[] ConvertIntToCharArrayOne(int[] toconvert)
+        {
+
+            char[] toReturn = new char[toconvert.Length];
+            char[] intConversionArray = BankOfBitsNBytes.acceptablePasswordChars;
+            for (int i = 0; i < toconvert.Length; i++)
+            {
+
+                toReturn[i] = intConversionArray[toconvert[i]];
+
+
+            }
+            return toReturn;
         }
+
 
         private static void DebugOutputCharArray(char[] toString)
         {
@@ -114,7 +156,44 @@ namespace BankOfBitsNByteAkshay
 
 
 
-    
+
+
+
+
+/*
+ThreadStart ts = new ThreadStart(MultiThredBegin); ;
+Thread t = new Thread(ts);
+t.Start();
+
+int[] intArray = new int[bbb.passwordLength];
+while (amountOfMoney < 5000)
+
+{
+    //char[] passGussCharArray = new char[MaxAcceptableCharLength];
+    char[] passGussCharArray = ConvertIntToCharArray(intArray, BankOfBitsNBytes.acceptablePasswordChars);
+    DebugOutputCharArray(passGussCharArray);
+
+    amountOfMoney += bbb.WithdrawMoney(passGussCharArray);
+    intArray[intArray.Length - 1]++;
+
+
+    if (intArray[intArray.Length - 1] >= MaxAcceptableCharLength)
+    {
+        IncrementIntArray(ref intArray, MaxAcceptableCharLength);
+
+
+
+    }
+    MultiThredBegin(intArray);
+
+}
+
+Console.WriteLine("We robbed the Bank We rich now. Press any key to continue ");
+Console.Read();
+*/
+
+
+
 
 
 

@@ -22,9 +22,9 @@ namespace MultiThread
         static void Main(string[] args)
         {
 
+            /*
             
-            
-            /*{
+            {
                 ThreadStart ts = new ThreadStart(PrintOutOnes);     //Create a thread start given delegate
                 Thread t = new Thread(ts);                          //Create thread with threadstart
                 //t.Priority = ThreadPriority.Highest;
@@ -69,19 +69,19 @@ namespace MultiThread
                 t.Start();
             }
             */
-            
-            /*{
-                ThreadStart ts = new ThreadStart(NightClub);
-                Thread t = new Thread(ts);
-                t.Start();
-            }
 
             {
                 ThreadStart ts = new ThreadStart(NightClub);
                 Thread t = new Thread(ts);
                 t.Start();
-            }*/
-            /*
+            }
+
+            {
+                ThreadStart ts = new ThreadStart(NightClub);
+                Thread t = new Thread(ts);
+                t.Start();
+            }
+
 
             {
                 ThreadStart ts = new ThreadStart(BiggerNightClub);
@@ -99,26 +99,26 @@ namespace MultiThread
                 ThreadStart ts = new ThreadStart(BiggerNightClub);
                 Thread t = new Thread(ts);
                 t.Start();
-            }*/
-
-           /* List<delg> delgList = new List<delg>()
-            {
-                BiggerNightClub,
-                BiggerNightClub,
-                NightClub,
-                () => someInt++,
-                () => BiggerNightClub(),
-                () => PrintOutChar('a', 50)
-            };
-
-            Stack<delg> toProcess = new Stack<delg>(delgList);
-
-            while(toProcess.Count > 0)
-            {
-                delg nextToProc = toProcess.Pop();
-                StartThread(nextToProc);
             }
-*/
+
+            /* List<delg> delgList = new List<delg>()
+             {
+                 BiggerNightClub,
+                 BiggerNightClub,
+                 NightClub,
+                 () => someInt++,
+                 () => BiggerNightClub(),
+                 () => PrintOutChar('a', 50)
+             };
+
+             Stack<delg> toProcess = new Stack<delg>(delgList);
+
+             while(toProcess.Count > 0)
+             {
+                 delg nextToProc = toProcess.Pop();
+                 StartThread(nextToProc);
+             }
+ */
 
             Console.WriteLine("Program finished");
             Console.ReadLine();
